@@ -20,8 +20,8 @@
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
 <video id="video" autoplay loop crossOrigin="anonymous" webkit-playsinline style="display:none">
-	<source src="video/deltaEbre_53_anys.ogv" type='video/ogg; codecs="theora, vorbis"'>
-	<source src="video/deltaEbre_53_anys.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	<source src="video/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+	<source src="video/sintel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 </video>
 <!-- 
   Example created by Lee Stemkoski: https://github.com/stemkoski
@@ -140,7 +140,7 @@ function sentinelDeca()
 	
 	new THREE.MTLLoader()
 		.setPath( 'models/' )
-		.load( 'materials.mtl', function ( materials ) {
+		.load( 'model.mtl', function ( materials ) {
 			materials.preload();
 			new THREE.OBJLoader()
 				.setMaterials( materials )
