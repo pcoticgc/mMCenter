@@ -1,0 +1,15 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl SkinColor
+Ns 179.999996
+Ka 0.008547 0.008547 0.008547
+Kd 1.000000 1.000000 1.000000
+Ks 2.000000 2.000000 2.000000
+Ke 0.0 0.0 0.0
+Ni 1.450000
+d 1.000000
+illum 3
+map_Bump TrexBump012714.jpg
+map_Kd TrexColor01152015.jpg
+map_Ks TrexModelByJoel3d_FBX\\TrexSpec.png
