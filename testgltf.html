@@ -1,0 +1,28 @@
+<-DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+	<script src="https://rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+
+
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>         
+        <a-assets>
+            <a-asset-item id="animated-asset" src="scene.gltf"></a-asset-item>
+        </a-assets>
+        
+		<!-- handle hiro marker-->
+		<a-marker preset='hiro'>
+  		  <a-gltf-model src="#animated-asset"
+		  scale="0.01 0.01 0.01"
+		  animation-mixer="loop:repeat"></a-gltf-model>
+		</a-marker>
+		
+  	    <a-entity camera></a-entity>
+	</a-scene>
+	
+</body>
+</html>
